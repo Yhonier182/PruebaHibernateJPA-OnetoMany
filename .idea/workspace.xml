@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="OneToMany Ok(200)" />
+    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="OneToMany Ok(200)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/ProductoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/Persona.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +39,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Yhonier182/HibernateJPA.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Yhonier182/PruebaHibernateJPA-OnetoMany.git&quot;,
     &quot;accountId&quot;: &quot;5f2f179a-4f2c-4185-bbe0-27f6c7a3aa32&quot;
   }
 }</component>
@@ -53,25 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Principal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/JHONIER ARIAS/Desktop/INSTRUCTORES/CRISTIAN/5 TRIMESTRE/PruebaHibernateJPA-OnetoMany",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JHONIER ARIAS/Desktop/INSTRUCTORES/CRISTIAN/5 TRIMESTRE/PruebaHibernateJPA-OnetoMany&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Principal">
     <configuration name="AplicacionGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yhonier.Vista.AplicacionGUI" />
@@ -137,7 +143,8 @@
       <workItem from="1730999296486" duration="11060000" />
       <workItem from="1731010602461" duration="641000" />
       <workItem from="1731011281090" duration="149000" />
-      <workItem from="1731011656341" duration="578000" />
+      <workItem from="1731011656341" duration="831000" />
+      <workItem from="1731012658577" duration="3708000" />
     </task>
     <task id="LOCAL-00001" summary="PROYECTO INICIAL">
       <option name="closed" value="true" />
@@ -195,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731009417808</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="OneToMany Ok(200)">
+      <option name="closed" value="true" />
+      <created>1731012416651</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731012416652</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
