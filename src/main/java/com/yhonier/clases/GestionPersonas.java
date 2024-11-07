@@ -4,6 +4,7 @@ import com.yhonier.dao.PersonaDao;
 import com.yhonier.entidades.Mascota;
 import com.yhonier.entidades.Nacimiento;
 import com.yhonier.entidades.Persona;
+import com.yhonier.entidades.Producto;
 
 import javax.swing.*;
 import java.time.LocalDate;
@@ -18,23 +19,28 @@ public class GestionPersonas {
         menu += "1. Registrar Persona\n";
         menu += "2. Consultar Persona\n";
         menu += "3. Consultar lista de Personas\n";
-        menu += "4. Actualizar Persona\n";
-        menu += "5. Eliminar Persona\n";
-        menu += "6. Salir\n";
+        menu += "4. Consultar Productos por persona\n";
+        menu += "5. Actualizar Persona\n";
+        menu += "6. Eliminar Persona\n";
+        menu += "7. Salir\n";
 
         int opc = 0;
-        while (opc != 6) {
+        while (opc != 7) {
             opc = Integer.parseInt(JOptionPane.showInputDialog(menu));
             switch (opc) {
                 case 1: registrar(); break;
                 case 2: consultar(); break;
                 case 3: consultarLista(); break;
-                case 4: actualizarNombre(); break;
-                case 5: eliminar(); break;
-                case 6: mipersonaDao.close(); break;
+                case 4: consultarProductosPersona(); break;
+                case 5: actualizarNombre(); break;
+                case 6: eliminar(); break;
+                case 7: mipersonaDao.close(); break;
             }
         }
     }
+
+
+
 
 
     private void registrar() {
@@ -156,6 +162,14 @@ public class GestionPersonas {
         }
     }
 
+    private void consultarProductosPersona() {
+       Long id = Long.parseLong(JOptionPane.showInputDialog("Ingrese el id de la persona a consultar"));
+       List<Producto> listaProductos= mipersonaDao.obtenerProductosPorPersona(id);
+        System.out.println("Lista de productos persona" + id);
+        for (Producto producto: listaProductos){
+            System.out.println(producto);
+        }
+    }
 
 
 

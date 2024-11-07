@@ -2,8 +2,10 @@ package com.yhonier.dao;
 
 import com.yhonier.aplicacion.JPAUtil;
 import com.yhonier.entidades.Persona;
+import com.yhonier.entidades.Producto;
 import jakarta.persistence.EntityManager;
 import javax.swing.*;
+import java.util.Collections;
 import java.util.List;
 
 public class PersonaDao {
@@ -55,6 +57,17 @@ public class PersonaDao {
         }
         return "";
     }
+
+
+    public List<Producto> obtenerProductosPorPersona(Long personaId) {
+        Persona persona = entityManager.find(Persona.class, personaId);
+        if (persona != null) {
+            return persona.getListaProductos();
+        }
+        return Collections.emptyList();
+    }
+
+
 
     public void close() {
         entityManager.close();

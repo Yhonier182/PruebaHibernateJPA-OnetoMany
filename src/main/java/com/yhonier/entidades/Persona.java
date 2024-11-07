@@ -40,6 +40,15 @@ public class Persona implements Serializable {
 
 
 
+    @ManyToMany
+    @JoinTable(name = "personas_productos",
+            joinColumns = @JoinColumn(name="persona_id"),
+            inverseJoinColumns = @JoinColumn(name="producto_id"))
+    private List<Producto> listaProductos;
+
+
+
+
     public Persona() {
         this.listaMascotas=new ArrayList<Mascota>();
     }
@@ -55,6 +64,15 @@ public class Persona implements Serializable {
         this.listaMascotas=new ArrayList<Mascota>();
     }
 
+
+
+    public List<Producto>getListaProductos(){
+        return listaProductos;
+    }
+
+    public void setListaProductos(List<Producto> listaProductos) {
+        this.listaProductos = listaProductos;
+    }
 
     public List<Mascota> getListaMascotas() {
         return listaMascotas;
@@ -128,6 +146,7 @@ public class Persona implements Serializable {
                 ", tipo=" + tipo +
                 ", nacimiento=" + nacimiento +
                 ", ListaMascotas=" + mascotaInfo +
+                ", listaProductos=" + listaProductos +
                 '}';
     }
 }
