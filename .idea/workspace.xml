@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="OneToMany Ok(200)" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Yhonier182&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Yhonier182/HibernateJPA.git&quot;,
+    &quot;accountId&quot;: &quot;5f2f179a-4f2c-4185-bbe0-27f6c7a3aa32&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/yhonier/dao/MascotaDao.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2o7uViMKgJyS0oKGInIoyEvnuFY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Principal.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/JHONIER ARIAS/Desktop/INSTRUCTORES/CRISTIAN/5 TRIMESTRE/PruebaHibernateJPA-OnetoMany",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Principal">
+    <configuration name="AplicacionGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yhonier.Vista.AplicacionGUI" />
+      <module name="PruebaHibernateJPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhonier.Vista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yhonier.aplicacion.Principal" />
+      <module name="PruebaHibernateJPA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhonier.aplicacion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.AplicacionGUI" />
+        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.AplicacionGUI" />
+        <item itemvalue="Application.Principal" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="" />
+      <created>1730232963053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730232963053</updated>
+      <workItem from="1730232969540" duration="2294000" />
+      <workItem from="1730308498608" duration="20000" />
+      <workItem from="1730651135162" duration="1264000" />
+      <workItem from="1730737218520" duration="4255000" />
+      <workItem from="1730804884775" duration="1898000" />
+      <workItem from="1730812419949" duration="4425000" />
+      <workItem from="1730921342734" duration="12727000" />
+      <workItem from="1730936495950" duration="724000" />
+      <workItem from="1730986104718" duration="9141000" />
+      <workItem from="1730999296486" duration="11060000" />
+      <workItem from="1731010602461" duration="641000" />
+      <workItem from="1731011281090" duration="149000" />
+      <workItem from="1731011656341" duration="578000" />
+    </task>
+    <task id="LOCAL-00001" summary="PROYECTO INICIAL">
+      <option name="closed" value="true" />
+      <created>1730738045569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730738045569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="IMPLEMANTACION DE VISTA MASCOTA">
+      <option name="closed" value="true" />
+      <created>1730813716103</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730813716103</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Relación One To One – Hibernate y JPA">
+      <option name="closed" value="true" />
+      <created>1730814621384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730814621384</updated>
+    </task>
+    <task id="LOCAL-00004" summary=" OneToOne OK(200)">
+      <option name="closed" value="true" />
+      <created>1730936066460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730936066460</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" OneToOne OK(200)">
+      <option name="closed" value="true" />
+      <created>1730936117510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730936117510</updated>
+    </task>
+    <task id="LOCAL-00006" summary="OneToMany Ok(200)">
+      <option name="closed" value="true" />
+      <created>1731009344776</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731009344778</updated>
+    </task>
+    <task id="LOCAL-00007" summary="OneToMany Ok(200)">
+      <option name="closed" value="true" />
+      <created>1731009417808</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731009417808</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="PROYECTO INICIAL" />
+    <MESSAGE value="IMPLEMANTACION DE VISTA MASCOTA" />
+    <MESSAGE value="Relación One To One – Hibernate y JPA" />
+    <MESSAGE value=" OneToOne OK(200)" />
+    <MESSAGE value="OneToOne Ok(200)" />
+    <MESSAGE value="OneToMany Ok(200)" />
+    <option name="LAST_COMMIT_MESSAGE" value="OneToMany Ok(200)" />
+  </component>
+</project>
