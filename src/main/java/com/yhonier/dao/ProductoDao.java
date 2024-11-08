@@ -1,12 +1,10 @@
 package com.yhonier.dao;
 
 import com.yhonier.aplicacion.JPAUtil;
-import com.yhonier.entidades.Persona;
 import com.yhonier.entidades.Producto;
 import jakarta.persistence.EntityManager;
 
 import javax.swing.*;
-import java.util.Collections;
 import java.util.List;
 
 
@@ -67,39 +65,6 @@ public class ProductoDao {
             JOptionPane.showMessageDialog(null,"No se pudo eliminar el producto","Error",JOptionPane.ERROR_MESSAGE);
         }return  resp;
     }
-
-    public String registrarCompra(Long personaId, Long productoId){
-        String  resp="";
-        try {
-            entityManager.getTransaction().begin();
-            Persona persona = entityManager.find(Persona.class, personaId);
-            Producto producto = entityManager.find(Producto.class, productoId);
-            if (persona == null || producto == null) {
-                throw new Exception("persona o producto no encontrados.");
-            }
-            persona.getListaProductos().add(producto);
-            entityManager.merge(persona);
-            entityManager.getTransaction().commit();
-            resp = "Se realizo Compra del producto¡ ";
-        } catch (Exception e) {
-            if (entityManager.getTransaction().isActive()) {
-                entityManager.getTransaction().rollback();
-            }
-            JOptionPane.showMessageDialog(null,"No se puede registrar la compra del producto",
-                    "Error",JOptionPane.ERROR_MESSAGE);
-        }
-
-        return resp;
-    }
-
-    public List<Persona> obtenerPersonasPorProducto(Long productoId) {
-        String jpql = "SELECT p FROM Persona p JOIN p.listaProductos prod WHERE prod.id = :productoId";
-        List<Persona> listaPersonas = entityManager.createQuery(jpql, Persona.class)
-                .setParameter("productoId", productoId)
-                .getResultList();
-        return listaPersonas;
-    }
-
 
     public void close(){
         entityManager.close();
