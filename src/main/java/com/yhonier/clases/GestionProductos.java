@@ -16,7 +16,6 @@ public class GestionProductos {
         menu += "1. Registrar Producto\n";
         menu += "2. Consultar Producto\n";
         menu += "3. Consultar Lista de Productos\n ";
-        menu += "4. Consultar Personas por Producto\n ";
         menu += "4. Comprar productos\n";
         menu += "5. Actualizar Producto\n";
         menu += "6. Eliminar Producto\n";
@@ -25,7 +24,7 @@ public class GestionProductos {
 
         int opcion = 0;
 
-        while (opcion != 8) {
+        while (opcion != 7) {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(menu));
             switch (opcion) {
                 case 1:
@@ -38,18 +37,15 @@ public class GestionProductos {
                     consultarLista();
                     break;
                 case 4:
-                      consultarPersonasPorProducto();
-                      break;
-                case 5:
                     comprarProductos();
                     break;
-                case 6:
+                case 5:
                     actualizar();
                     break;
-                case 7:
+                case 6:
                     eliminar();
                     break;
-                case 8:
+                case 7:
                     miProductoDao.close();
                     break;
             }

@@ -7,6 +7,7 @@ import java.util.List;
 
 
 @Entity
+@Table(name = "Productos")
 public class Producto implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -21,8 +22,11 @@ public class Producto implements Serializable {
     @Column(name = "precio_producto")
     private Double precioProducto;
 
-    @ManyToMany (mappedBy = "listaProductos")
-    private List<Producto> listaproductos;
+    @ManyToMany(mappedBy = "listaProductos")
+    private List<Persona> listaPersonas;
+
+
+
 
     public Producto() {
 
@@ -59,23 +63,21 @@ public class Producto implements Serializable {
         this.precioProducto = precioProducto;
     }
 
-    public List<Producto> getListaproductos() {
-        return listaproductos;
+    public List<Persona> getListaPeronas() {
+        return listaPersonas;
     }
 
-    public void setListaproductos(List<Producto> listaproductos) {
-        this.listaproductos = listaproductos;
+    public void setListaPeronas(List<Persona> listaPeronas) {
+        this.listaPersonas = listaPeronas;
     }
 
     @Override
     public String toString() {
-        return "Producto{" +
-                "idProducto=" + idProducto +
-                ", nombreProducto='" + nombreProducto + '\'' +
-                ", precioProducto=" + precioProducto +
-                ", listaproductos=" + listaproductos +
-                '}';
+        return "Producto [idProducto= " + idProducto + ","
+                + " nombreProducto= " + nombreProducto + ","
+                + " precioProducto= "+ precioProducto + "]";
     }
+
 }
 
 

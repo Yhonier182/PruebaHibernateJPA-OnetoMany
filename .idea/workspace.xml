@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="OneToMany Ok(200)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/ProductoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/Persona.java" afterDir="false" />
-    </list>
+    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="OneToMany Ok(200)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +24,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -254,6 +248,8 @@
     <MESSAGE value=" OneToOne OK(200)" />
     <MESSAGE value="OneToOne Ok(200)" />
     <MESSAGE value="OneToMany Ok(200)" />
-    <option name="LAST_COMMIT_MESSAGE" value="OneToMany Ok(200)" />
+    <MESSAGE value="ProductoDao Terminado" />
+    <MESSAGE value="tabla-PersonasProductos (200)OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="tabla-PersonasProductos (200)OK" />
   </component>
 </project>
