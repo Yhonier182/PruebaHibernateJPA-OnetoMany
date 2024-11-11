@@ -5,6 +5,7 @@ import com.yhonier.entidades.Persona;
 import com.yhonier.entidades.Producto;
 
 import javax.swing.*;
+import java.time.LocalDate;
 import java.util.List;
 
 public class GestionProductos {
@@ -17,10 +18,10 @@ public class GestionProductos {
         menu += "2. Consultar Producto\n";
         menu += "3. Consultar Lista de Productos\n ";
         menu += "4. Consultar Personas por Producto\n ";
-        menu += "4. Comprar productos\n";
-        menu += "5. Actualizar Producto\n";
-        menu += "6. Eliminar Producto\n";
-        menu += "7. Salir\n";
+        menu += "5. Comprar productos\n";
+        menu += "6. Actualizar Producto\n";
+        menu += "7. Eliminar Producto\n";
+        menu += "8. Salir\n";
 
 
         int opcion = 0;
@@ -124,25 +125,31 @@ public class GestionProductos {
     public void comprarProductos() {
         Long personaId;
         Long productoId;
+        int cantidad;
+        LocalDate fechaCompra = LocalDate.now();  // se obtiene la fecha actual
         int opcion = 0;
 
         do {
             try {
                 personaId = Long.parseLong(JOptionPane.showInputDialog("Ingrese el documento de la persona"));
                 productoId = Long.parseLong(JOptionPane.showInputDialog("Ingrese el documento del producto"));
+                cantidad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad del producto"));
 
-                String resultado = miProductoDao.registrarCompra(personaId, productoId);
+                String resultado = miProductoDao.registrarCompra(personaId, productoId, cantidad,fechaCompra);
                 System.out.println(resultado);
+
             } catch (NumberFormatException e) {
                 System.out.println("Error: Entrada invalida. por favor, ingrese valores" +
                         "numericos validos");
             } catch (Exception e) {
                 System.out.println("Error al registrar la compra:  " + e.getMessage());
             }
-            opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese 1 si desea agregar producto"));
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese 1 si desea agregar otro producto"));
         }
         while (opcion == 1) ;
     }
+
+
 
     private void consultarPersonasPorProducto() {
         long productoId = Long.parseLong(JOptionPane.showInputDialog("Ingrese el id del producto a consultar"));

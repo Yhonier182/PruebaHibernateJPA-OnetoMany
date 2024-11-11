@@ -2,10 +2,12 @@ package com.yhonier.dao;
 
 import com.yhonier.aplicacion.JPAUtil;
 import com.yhonier.entidades.Persona;
+import com.yhonier.entidades.PersonasProductos;
 import com.yhonier.entidades.Producto;
 import jakarta.persistence.EntityManager;
 
 import javax.swing.*;
+import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 
@@ -68,17 +70,26 @@ public class ProductoDao {
         }return  resp;
     }
 
-    public String registrarCompra(Long personaId, Long productoId){
+    public String registrarCompra(Long personaId, Long productoId, int cantidad , LocalDate fechaCompra){
         String  resp="";
         try {
             entityManager.getTransaction().begin();
+
             Persona persona = entityManager.find(Persona.class, personaId);
             Producto producto = entityManager.find(Producto.class, productoId);
+
             if (persona == null || producto == null) {
                 throw new Exception("persona o producto no encontrados.");
             }
-            persona.getListaProductos().add(producto);
-            entityManager.merge(persona);
+            PersonasProductos compra = new PersonasProductos();
+            compra.setPersonaId(personaId);
+            compra.setProductoId(productoId);
+            compra.setCantidad(cantidad);
+            compra.setFechaCompra(java.sql.Date.valueOf(fechaCompra));
+
+            //persistir la compra en la base de datos
+            entityManager.persist(compra);
+
             entityManager.getTransaction().commit();
             resp = "Se realizo Compra del producto¡ ";
         } catch (Exception e) {

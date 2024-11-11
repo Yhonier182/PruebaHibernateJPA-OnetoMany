@@ -2,6 +2,7 @@ package com.yhonier.dao;
 
 import com.yhonier.aplicacion.JPAUtil;
 import com.yhonier.entidades.Persona;
+import com.yhonier.entidades.PersonasProductos;
 import com.yhonier.entidades.Producto;
 import jakarta.persistence.EntityManager;
 import javax.swing.*;
@@ -59,13 +60,14 @@ public class PersonaDao {
     }
 
 
-    public List<Producto> obtenerProductosPorPersona(Long personaId) {
-        Persona persona = entityManager.find(Persona.class, personaId);
-        if (persona != null) {
-            return persona.getListaProductos();
-        }
-        return Collections.emptyList();
+    public List<PersonasProductos> obtenerProductosPorPersona(Long personaId) {
+        String jpql = "SELECT pp FROM PersonasProductos pp WHERE pp.personaId = :personaId";
+        List<PersonasProductos> listaProductosPersona = entityManager.createQuery(jpql, PersonasProductos.class)
+                .setParameter("personaId", personaId)
+                .getResultList();
+        return listaProductosPersona;
     }
+
 
 
 

@@ -1,10 +1,7 @@
 package com.yhonier.clases;
 
 import com.yhonier.dao.PersonaDao;
-import com.yhonier.entidades.Mascota;
-import com.yhonier.entidades.Nacimiento;
-import com.yhonier.entidades.Persona;
-import com.yhonier.entidades.Producto;
+import com.yhonier.entidades.*;
 
 import javax.swing.*;
 import java.time.LocalDate;
@@ -164,10 +161,14 @@ public class GestionPersonas {
 
     private void consultarProductosPersona() {
        Long id = Long.parseLong(JOptionPane.showInputDialog("Ingrese el id de la persona a consultar"));
-       List<Producto> listaProductos= mipersonaDao.obtenerProductosPorPersona(id);
-        System.out.println("Lista de productos persona" + id);
-        for (Producto producto: listaProductos){
-            System.out.println(producto);
+       List<PersonasProductos> compras= mipersonaDao.obtenerProductosPorPersona(id);
+
+        if (compras.isEmpty()){
+            System.out.println("No se encontraron compras para la persona con el ID: "+ id);
+        }else {
+            for (PersonasProductos compra : compras) {
+                System.out.println(compra);
+            }
         }
     }
 

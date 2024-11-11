@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment="OneToMany Ok(200)" />
+    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment=" Actualizacion-PersonasProductos (200)OK">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionPersonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionPersonas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/PersonaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/PersonaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/ProductoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/ProductoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/PersonasProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/PersonasProductos.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +75,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -139,6 +146,7 @@
       <workItem from="1731011281090" duration="149000" />
       <workItem from="1731011656341" duration="831000" />
       <workItem from="1731012658577" duration="3708000" />
+      <workItem from="1731350068298" duration="3318000" />
     </task>
     <task id="LOCAL-00001" summary="PROYECTO INICIAL">
       <option name="closed" value="true" />
@@ -204,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731012416652</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=" Actualizacion-PersonasProductos (200)OK">
+      <option name="closed" value="true" />
+      <created>1731090242849</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731090242849</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +266,11 @@
     <MESSAGE value="OneToMany Ok(200)" />
     <MESSAGE value="ProductoDao Terminado" />
     <MESSAGE value="tabla-PersonasProductos (200)OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="tabla-PersonasProductos (200)OK" />
+    <MESSAGE value=" Actualizacion-PersonasProductos (200)OK" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Actualizacion-PersonasProductos (200)OK" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
