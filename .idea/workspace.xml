@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment=" Actualizacion-PersonasProductos (200)OK">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionPersonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionPersonas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/clases/GestionProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/PersonaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/PersonaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/ProductoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/dao/ProductoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/PersonasProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhonier/entidades/PersonasProductos.java" afterDir="false" />
-    </list>
+    <list default="true" id="6348f4d5-bf78-4c07-8e12-ba6f9da8472d" name="Changes" comment=" Actualizacion-PersonasProductos (200)OK" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +139,7 @@
       <workItem from="1731011281090" duration="149000" />
       <workItem from="1731011656341" duration="831000" />
       <workItem from="1731012658577" duration="3708000" />
-      <workItem from="1731350068298" duration="3318000" />
+      <workItem from="1731350068298" duration="4015000" />
     </task>
     <task id="LOCAL-00001" summary="PROYECTO INICIAL">
       <option name="closed" value="true" />
