@@ -154,7 +154,7 @@ public class GestionPersonas {
             System.out.println(mipersona);
             System.out.println();
 
-            System.out.println(mipersonaDao.eliminarPersona(mipersona));
+            System.out.println(mipersonaDao.eliminarPersona(mipersona.getIdPersona()));
             System.out.println();
         }
     }

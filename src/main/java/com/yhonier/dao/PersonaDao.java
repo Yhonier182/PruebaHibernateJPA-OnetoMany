@@ -1,6 +1,7 @@
 package com.yhonier.dao;
 
 import com.yhonier.aplicacion.JPAUtil;
+import com.yhonier.entidades.Mascota;
 import com.yhonier.entidades.Persona;
 import com.yhonier.entidades.PersonasProductos;
 import com.yhonier.entidades.Producto;
@@ -45,18 +46,25 @@ public class PersonaDao {
         return "Actualizacion exitosa";
     }
 
-    public String eliminarPersona(Persona idPersona) {
+    public String eliminarPersona(Long idPersona) {
         try {
             entityManager.getTransaction().begin();
             Persona miPersona = entityManager.find(Persona.class, idPersona);
+
+            //si tiene relacion con una mascota eliminarla para que haga el efecto cascada
+            for (Mascota mascota : miPersona.getListaMascotas()) {
+                entityManager.remove(mascota);
+            }
             entityManager.remove(miPersona);
             entityManager.getTransaction().commit();
-            return "Eliminacion exitosa";
+
+            return "Eliminación exitosa";
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "No se puede eliminar la persona"
-                    + "Verifique  que no tenga registros pendientes", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "No se puede eliminar la persona. "
+                    + "Verifique que no tenga registros pendientes.");
+
+            return "";
         }
-        return "";
     }
 
 
